@@ -24,6 +24,12 @@ const setupInput = function (conn) {
         connection.write("Move: down");
       } else if (key === 'd') {
         connection.write("Move: right");
+      } else if (key === 'o') {
+        connection.write("Say: On my way");
+      } else if (key === 't') {
+        connection.write("Say: Taking the lead");
+      } else if (key === 'p') {
+        connection.write("Say: You got a big head");
       }
     };
 
