@@ -1,3 +1,4 @@
+// Sets up keyboard inputs between client and server.
 const setupInput = function (conn) {
     connection = conn
     const stdin = process.stdin;
@@ -8,6 +9,7 @@ const setupInput = function (conn) {
     return stdin;
   };
   
+  // Gives instructions to the program when certain keys are pressed.
   const handleUserInput = function (key) {
     if (key === '\u0003') {
       process.exit();
@@ -28,8 +30,6 @@ const setupInput = function (conn) {
       } else if (key === 'l') {
         connection.write('Say: Trust a snake');
       }
-    
     };
 
-
-  module.exports = { setupInput };
+module.exports = { setupInput };
